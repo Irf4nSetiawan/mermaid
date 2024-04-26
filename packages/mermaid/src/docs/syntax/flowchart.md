@@ -20,13 +20,27 @@ Typing "A---xB" will create a [cross edge](#cross-edge-example).
 
 ### A node (default)
 
-```mermaid-example
----
-title: Node
----
-flowchart LR
-    id
-```
+graph LR
+A[Upstream Suppliers] --> B{Vehicle Manufacturers}
+A --> C{Fuel Providers}
+A --> D{Maintenance Service Providers}
+A --> E{Technology Providers}
+B --> F{Vehicle Acquisition}
+C --> F
+D --> F{Vehicle Maintenance}
+E --> F{Fleet Management System}
+E --> G{Logistics Tracking Tools}
+E --> H{Online Car Auction Platform}
+F --> I{Driver Management}
+F --> J{Logistics Network}
+I --> K{Customer Service}
+J --> K
+K --> L{Corporations}
+K --> M{Individuals}
+K --> N{E-commerce Companies}
+K --> O{Retailers}
+
+
 
 ```note
 The id is what is displayed in the box.
